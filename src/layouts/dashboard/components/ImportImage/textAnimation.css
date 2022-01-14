@@ -1,0 +1,23 @@
+.loadingText {
+    color: #3079ed;
+    animation-name: text-focus-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 8;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    /* shorthand
+    animation: text-focus-in 1.2s ease-out 0s infinite alternate-reverse forwards;
+    */
+}
+@keyframes text-focus-in {
+    0%{
+        filter: blur(12px);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(0);
+        opacity: 0;
+    }
+}
